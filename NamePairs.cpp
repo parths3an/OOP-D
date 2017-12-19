@@ -1,7 +1,12 @@
 #include <iostream>
 #include "NamePairs.h"
-
+#include <vector>
 using namespace std;
+
+Name_pairs::Name_pairs()
+{
+//Nothing to do
+}
 
 void Name_pairs::readPair(vector<pair<string, double> > &inPairVec)
 {
@@ -35,5 +40,5 @@ void Name_pairs::printFromVec()
 
 void Name_pairs::sortPairs()
 {
-    
+  std::sort(nameAgePairVec.begin(), nameAgePairVec.end());    
 }

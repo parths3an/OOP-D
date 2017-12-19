@@ -1,6 +1,6 @@
 #include "NamePairs.h"
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 int main()
@@ -16,7 +16,7 @@ while( inputVal != 'n')
 {
     cout << "Enter Name: "; 
     cin >> inString;
-    cout << endl << "Enter Age: ";
+    cout << "Enter Age: ";
     cin >> inAge;
     cout << endl;
     cout << "Still want to input data? y/n" << endl;
@@ -36,6 +36,9 @@ np1.print();
 //Printing from the individual vector
 cout << "Printing data from individual vectors... \n";
 np1.printFromVec();
+
+cout << "Sorting the vector of pairs...\n";
+np1.sortPairs();
 
 return 0;
 }
