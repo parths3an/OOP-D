@@ -29,8 +29,16 @@ bool myComparison(pair<string,double> i,pair<string,double> j)
   return (i.first > j.first);
 }
 
+vector< pair<string,double> >  nameAgePairVec;
+
+private:
+vector <double> ageVec;
+vector <string> nameVec;
+};
+#endif 
+
 //Operator overloading, insertation operator
-friend ostream& operator<<(ostream& os, Name_pairs& b)
+ostream& operator<<(ostream& os, Name_pairs& b)
 {
     string literals = " ";
     string newLine= "\n";
@@ -42,13 +50,5 @@ friend ostream& operator<<(ostream& os, Name_pairs& b)
     }
     return os;
 }
-
-
-private:
-vector <double> ageVec;
-vector <string> nameVec;
-vector< pair<string,double> >  nameAgePairVec;
-};
-#endif 
 
 
