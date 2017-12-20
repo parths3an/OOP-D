@@ -23,6 +23,11 @@ void print();
 //Sorting the pairs alphabetically 
 void sortPairs();
 
+bool myComparison(pair<string,double> i,pair<string,double> j)
+{
+
+  return (i.first > j.first);
+}
 private:
 vector< pair<string,double> >  nameAgePairVec;
 vector <double> ageVec;

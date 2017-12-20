@@ -1,6 +1,7 @@
 #include <iostream>
 #include "NamePairs.h"
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 Name_pairs::Name_pairs()
@@ -40,5 +41,5 @@ void Name_pairs::printFromVec()
 
 void Name_pairs::sortPairs()
 {
-  std::sort(nameAgePairVec.begin(), nameAgePairVec.end());    
+  sort(nameAgePairVec.begin(), nameAgePairVec.end());    
 }

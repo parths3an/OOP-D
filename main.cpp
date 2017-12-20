@@ -37,8 +37,9 @@ np1.print();
 cout << "Printing data from individual vectors... \n";
 np1.printFromVec();
 
-cout << "Sorting the vector of pairs...\n";
+cout << "Sorting the vector of pairs and printing after sorting...\n";
 np1.sortPairs();
+np1.print();
 
 return 0;
 }
